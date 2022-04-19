@@ -38,7 +38,7 @@ accuracy = 100.0 * (y_test == y_test_pred).sum() / X_test.shape[0]
 print("Accuracy of the new classifier =", round(accuracy, 2), "%")
 
 # Візуалізація роботи класифікатора
-visualize_classifier(classifier_new, X_test, y_test)
+# visualize_classifier(classifier_new, X_test, y_test)
 
 num_folds = 3
 accuracy_values = train_test_split.cross_val_score(classifier, X, y, scoring='accuracy', cv=num_folds)
